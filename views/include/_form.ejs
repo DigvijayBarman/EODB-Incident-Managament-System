@@ -1,0 +1,82 @@
+<form action="/api/users" method="POST" name="add_user" id="add_user">
+    <div class="new_user">
+        <div class="form-group">
+            <label for="date" class="text-light">Date of issue: </label>
+            <input type="hidden" name="id" value="">
+            <input type="datetime-local" class="custom-select" name="date" id="date">
+        </div>
+        
+        <div class="form-group">
+            <label for="department" class="text-light">Select Department:</label>
+            <select class="custom-select" id="department" name="department">
+                <option value="labour-welfare">Labour Welfare</option>
+                <option value="health-and-family">Health and Family Welfare</option>
+                <option value="industries-commerce">Industries and Commerce</option>
+                <option value="Power">Power</option>
+                <option value="housing-urban-affairs">Housing and urban affairs</option>
+                <option value="tourism">Tourism</option>
+                <option value="home-political">Home and Political</option>
+                <option value="food-civil-consumer">Food, Civil Supplies & Consumer Affairs</option>
+                <option value="Finance">Finance</option>
+                <option value="Co-Operation">Co-Coperation</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="public-works">Public Works</option>
+                <option value="Environment-forest">Environment and Forest</option>
+                <option value="education">Education</option>
+                <option value="mines-minerals">Mines and Minerals</option>
+                <option value="excise">Excise</option>
+                <option value="judicial">Juducial</option>
+                <option value="Transport">Transport</option>
+                <option value="general-admininstration">General Administration</option>
+                <option value="information-technology">Information Technology</option>
+                <option value="petroleum-gas">Ministry of Petroleum and Gas</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="service" class="text-light">Select Service:</label>
+            <select class="custom-select" id="service" name="service">
+                <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="details" class="text-light">Details</label>
+            <input type="text" name="details" value="" placeholder="Enter details">
+        </div>
+
+
+        <div class="form-group">
+            <label for="gender" class="text-light">Issue Type: </label>
+            <div class="radio inline">
+                <input type="radio" id="radio-4" name="issuetype" value="Administrative" >
+                <label for="radio-4" class="radio-label">Administrative</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-5" name="issuetype" value="Technical" >
+                <label for="radio-5" class="radio-label">Technical</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-6" name="issuetype" value="Dependency-on-other" >
+                <label for="radio-6" class="radio-label">Depencency on others</label>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <label for="gender" class="text-light">Status</label>
+            <div class="radio inline">
+                <input type="radio" id="radio-7" name="status" value="Active" checked>
+                <label for="radio-7" class="radio-label">Active</label>
+            </div>
+            <div class="radio inline">
+                <input type="radio" id="radio-8" name="status" value="Closed" >
+                <label for="radio-8" class="radio-label">Closed</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>

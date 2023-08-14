@@ -1,0 +1,54 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+    <!-- main -->
+    <main id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <a href="/" class="border-shadow">
+                    <span class="text-gradient"><i class="fa-solid fa-angles-left"></i>Dashboard</span>
+                </a>
+            </div>
+        </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">Active Queries</h2>
+                <!-- <span class="text-light">Displaying existing active records from the database</spa> -->
+            </div>
+
+<!-- form handling -->
+        <form action="/" method="post">
+            <table id="table" class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Date of issue</th>
+                        <th>Department</th>
+                        <th>Service</th>
+                        <th>Details</th>
+                       <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <!-- show -->
+                   <%- include('include/_showActive') %>
+                   <!-- /show -->
+
+                </tbody>
+            </table>
+        </form>
+        
+        
+
+
+<!-- /form hanndling -->
+
+        </div>  
+</main>
+    <!-- /main -->
+
+
+<!-- include footer -->
+<%- include('include/_footer') %>
+<!-- /includer footer -->
